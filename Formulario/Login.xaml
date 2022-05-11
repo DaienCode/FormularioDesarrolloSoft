@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formulario.Login"
+             BackgroundColor="#464540">
+    <StackLayout Padding="0" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <Frame BackgroundColor="#ffdfdc"
+               Margin="20"
+               CornerRadius="20"
+               HasShadow="False"
+               VerticalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="30">
+                <Image Source="https://i.ibb.co/NSJFPLh/iniciar-sesion.png"/>
+
+                <Frame VerticalOptions="Center"
+                       Padding="15,5,15,5"
+                       CornerRadius="10">
+                    <Entry Placeholder="Usuario"  
+                           x:Name="User" 
+                           PlaceholderColor="#a192a7"
+                           TextColor="#464540"/>
+
+                </Frame>
+                <Frame VerticalOptions="Center"
+                       Padding="15,5,15,5"
+                       CornerRadius="10"
+     >
+                    <Entry Placeholder="Contraseña" 
+                           IsPassword="True" 
+                           PlaceholderColor="#a192a7"
+                           TextColor="#464540"
+                           x:Name="Password"/>
+                </Frame>
+
+                <Button
+                    VerticalOptions="Center"
+                    Text="Iniciar"
+                    TextColor="Black"
+                    BackgroundColor="#f1b5b5"
+                    BorderColor="#f1b5b5"
+                    BorderWidth="2"
+                    CornerRadius="50"
+                    Clicked="Button_Clicked"
+                    ></Button>
+
+            </StackLayout>
+
+        </Frame>
+
+
+    </StackLayout>
+</ContentPage>
